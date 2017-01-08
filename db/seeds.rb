@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Todo.find_or_initialize_by(description: 'Pick up milk').tap do |todo|
+  todo.status = 'incomplete'
+  todo.save!
+end
+
+Todo.find_or_initialize_by(description: 'Walk the dog').tap do |todo|
+  todo.status = 'complete'
+  todo.save!
+end
