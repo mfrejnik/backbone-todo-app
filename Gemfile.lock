@@ -39,6 +39,11 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
+    backbone-on-rails (1.2.0.0)
+      eco
+      ejs
+      jquery-rails
+      railties
     builder (3.2.2)
     byebug (9.0.6)
     coffee-rails (4.2.1)
@@ -50,6 +55,12 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.4)
     debug_inspector (0.0.2)
+    eco (1.0.0)
+      coffee-script
+      eco-source
+      execjs
+    eco-source (1.1.0.rc.1)
+    ejs (1.1.1)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.14)
@@ -151,6 +162,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  backbone-on-rails (~> 1.2)
   byebug
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
