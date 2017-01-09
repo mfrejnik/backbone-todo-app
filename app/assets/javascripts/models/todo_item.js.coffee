@@ -17,7 +17,7 @@ window.todoItem2 = new BackboneTodoApp.Models.TodoItem(
   id: 2
 )
 
-window.todoItem2.on('change:cancelled', -> alert 'changed')
+window.todoItem2.on('change:status', -> alert 'changed')
 
 window.todoItem2.set(
   status: 'almost complete'
