@@ -6,4 +6,4 @@ window.BackboneTodoApp =
   initialize: -> alert 'Hello from Backbone!'
 
 $(document).ready ->
-  BackboneTodoApp.initialize()
+  # BackboneTodoApp.initialize()
