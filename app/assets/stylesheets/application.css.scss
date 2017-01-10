@@ -85,3 +85,10 @@ h3 a:focus {
 .complete a {
   color: #bbb;
 }
+li {
+  font-size: 1.6rem;
+  margin-bottom: .6rem;
+  strong {
+    font-weight: bold;
+  }
+}
