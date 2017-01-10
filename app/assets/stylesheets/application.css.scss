@@ -11,7 +11,7 @@ $font-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 // ----- Global ----- //
 
 html {
-  background: #e4b897 assets-url('bg-body.jpg') repeat;
+  background: #e4b897 asset-url('bg-body.jpg') repeat;
   font-size: 16px;
   height: 100%;
   text-rendering: optimizeLegibility;
@@ -34,20 +34,20 @@ body {
   width: 500px;
 }
 #app {
-  background: assets-url('bg-content.png') repeat;
+  background: asset-url('bg-content.png') repeat;
 }
 
 // ----- Text ----- //
 
 h1 {
-  background: assets-url('bg-todo.png') 48px 0 repeat-y;
+  background: asset-url('bg-todo.png') 48px 0 repeat-y;
   font: bold 4em/80px $font-base;
   padding: 0 20px 0 70px;
   text-align: right;
   text-transform: lowercase;
 }
 h3 {
-  background: assets-url('bg-todo.png') 48px 0 repeat-y;
+  background: asset-url('bg-todo.png') 48px 0 repeat-y;
   font: normal 1.8em/38px $font-base;
   padding: 2px 80px 0 70px;
   position: relative;
