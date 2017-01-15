@@ -4,7 +4,8 @@ class BackboneTodoApp.Views.TodosView extends Backbone.View
   id: 'todo-view'
   events:
     'click h3': 'alertStatus'
-  template: _.template '<h3>
+    'change input': 'toggleStatus'
+  template: _.template '<h3 class="<%= status %>">
                           <input type=checkbox
                             <% if (status == "complete") print("checked") %> />
                           <%= description %>
@@ -12,6 +13,9 @@ class BackboneTodoApp.Views.TodosView extends Backbone.View
   render: ->
     attributes = @model.toJSON()
     @$el.html(@template(attributes))
+
+  toggleStatus: ->
+    @model.toggleStatus()
 
   alertStatus: ->
     console.log 'You clicked h3'

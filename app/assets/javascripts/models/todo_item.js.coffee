@@ -4,6 +4,15 @@ class BackboneTodoApp.Models.TodoItem extends Backbone.Model
     description: 'Default description'
     status: 'incomplete'
 
+  toggleStatus: ->
+    if @get 'status' == 'incomplete'
+      @set {'status': 'complete'}
+    else
+      @set {'status': 'incomplete'}
+
+    @save()
+    console.log "#{@get 'status'}"
+
 window.todoItem = new BackboneTodoApp.Models.TodoItem(
   description: 'Pick up milk'
   status: 'incomplete'
