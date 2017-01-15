@@ -5,7 +5,8 @@ class BackboneTodoApp.Models.TodoItem extends Backbone.Model
     status: 'incomplete'
 
   toggleStatus: ->
-    if @get 'status' == 'incomplete'
+    console.log "#{@get 'status'}"
+    if @get('status') == 'incomplete'
       @set {'status': 'complete'}
     else
       @set {'status': 'incomplete'}
