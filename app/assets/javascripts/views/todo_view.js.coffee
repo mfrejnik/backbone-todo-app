@@ -21,8 +21,13 @@ class BackboneTodoApp.Views.TodosView extends Backbone.View
     console.log 'You clicked h3'
 
 window.todosView = new BackboneTodoApp.Views.TodosView(
+  model: todoItem
+)
+window.todosView2 = new BackboneTodoApp.Views.TodosView(
   model: todoItem2
 )
 window.todosView.render()
+window.todosView2.render()
 $(document).ready ->
   $('#app').html(window.todosView.el)
+  $('#app').append(window.todosView2.el)
