@@ -10,9 +10,16 @@ class BackboneTodoApp.Views.TodosView extends Backbone.View
                             <% if (status == "complete") print("checked") %> />
                           <%= description %>
                         </h3>'
+  initialize: ->
+    @model.on('change', @render, @)
+    @model.on('destroy', @remove, @)
+
   render: ->
     attributes = @model.toJSON()
     @$el.html(@template(attributes))
+
+  remove: ->
+    @$el.remove()
 
   toggleStatus: ->
     @model.toggleStatus()
