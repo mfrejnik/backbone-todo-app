@@ -10,8 +10,9 @@ class BackboneTodoApp.Views.TodoView extends Backbone.View
                           <%= description %>
                         </h3>'
   initialize: ->
-    @model.on('change', @render, @)
-    @model.on('destroy', @remove, @)
+    @model.on 'change', @render, @
+    @model.on 'destroy', @remove, @
+    @model.on 'hide', @remove, @
 
   render: ->
     attributes = @model.toJSON()
