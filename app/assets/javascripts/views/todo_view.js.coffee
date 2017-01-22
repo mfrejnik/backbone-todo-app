@@ -1,5 +1,4 @@
 class BackboneTodoApp.Views.TodoView extends Backbone.View
-  tagName: 'ul'
   className: 'todo'
   id: 'todo-view'
   events:
@@ -26,15 +25,3 @@ class BackboneTodoApp.Views.TodoView extends Backbone.View
 
   alertStatus: ->
     console.log 'You clicked h3'
-
-window.todoView = new BackboneTodoApp.Views.TodoView(
-  model: todoItem
-)
-window.todoView2 = new BackboneTodoApp.Views.TodoView(
-  model: todoItem2
-)
-window.todoView.render()
-window.todoView2.render()
-$(document).ready ->
-  $('#app').html(window.todoView.el)
-  $('#app').append(window.todoView2.el)
