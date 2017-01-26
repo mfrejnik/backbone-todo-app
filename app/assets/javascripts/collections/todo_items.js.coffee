@@ -7,5 +7,3 @@ class BackboneTodoApp.Collections.TodoItems extends Backbone.Collection
 
   hideModel: (model)->
     model.trigger 'hide'
-
-window.todoItems = new BackboneTodoApp.Collections.TodoItems()

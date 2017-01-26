@@ -11,6 +11,3 @@ class BackboneTodoApp.Models.TodoItem extends Backbone.Model
       @set {'status': 'incomplete'}
 
     @save()
-
-window.todoItem2 = new BackboneTodoApp.Models.TodoItem
-window.todoItem2.on('change:status', -> console.log 'changed')

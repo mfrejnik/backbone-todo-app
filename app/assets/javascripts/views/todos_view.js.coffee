@@ -19,11 +19,3 @@ class BackboneTodoApp.Views.TodosView extends Backbone.View
     #   _.each that.collection.models, ((model) ->
     #     that.addOne model
     #   ), that
-
-window.todoListView = new BackboneTodoApp.Views.TodosView
-  collection: window.todoItems
-
-window.todoListView.render()
-
-$(document).ready ->
-  $('#app').html window.todoListView.el

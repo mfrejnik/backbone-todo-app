@@ -7,3 +7,5 @@ window.BackboneTodoApp =
 
 $(document).ready ->
   # BackboneTodoApp.initialize()
+  TodosRouter = new BackboneTodoApp.Routers.TodoApp()
+  TodosRouter.start()
