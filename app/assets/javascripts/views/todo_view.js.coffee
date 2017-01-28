@@ -8,6 +8,7 @@ class BackboneTodoApp.Views.TodoView extends Backbone.View
                           <input type=checkbox
                             <% if (status == "complete") print("checked") %> />
                           <%= description %>
+                          <a href="/todos/<%= id %>">☞</a>
                         </h3>'
   initialize: ->
     @model.on 'change', @render, @

@@ -7,3 +7,9 @@ class BackboneTodoApp.Collections.TodoItems extends Backbone.Collection
 
   hideModel: (model)->
     model.trigger 'hide'
+
+  focusOnTodoItem: (id)->
+    todoItem = new BackboneTodoApp.Models.TodoItem({ id: id })
+    todoItemView = new BackboneTodoApp.Views.TodoView({ model: todoItem })
+    todoItem.fetch()
+    $('#app').append todoItemView.el

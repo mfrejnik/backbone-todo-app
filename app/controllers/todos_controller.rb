@@ -1,6 +1,6 @@
 class TodosController < ApplicationController
   before_filter :load_todo, only: %w(show update destroy)
-  respond_to :json
+  respond_to :json, :html
 
   def index
     @todos = Todo.all

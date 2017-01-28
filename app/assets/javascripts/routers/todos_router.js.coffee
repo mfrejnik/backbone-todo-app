@@ -12,7 +12,8 @@ class BackboneTodoApp.Routers.TodoApp extends Backbone.Router
     $('#app').html @todosView.el
     @todoItems.fetch()
 
-  show: ->
+  show: (id) ->
+    this.todoItems.focusOnTodoItem(id)
 
   start: ->
     Backbone.history.start({ pushState: true })
