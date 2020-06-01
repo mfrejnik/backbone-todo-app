@@ -26,7 +26,7 @@ gem 'jquery-rails'
 gem 'backbone-on-rails', '~> 1.2'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-gem 'responders', '~> 2.1', '>= 2.1.1'
+gem 'responders', '~> 3.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
